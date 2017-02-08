@@ -2,7 +2,6 @@
 // Alerts
 // --------------------------------------------------
 
-
 // Base styles
 // -------------------------
 
@@ -11,7 +10,7 @@
 }
 
 .alertTextShadowWithShadowColor (@shadowColor) {
-  text-shadow: 0 1px 0 rgba(red(@shadowColor),green(@shadowColor),blue(@shadowColor),.5);
+  text-shadow: 0 1px 0 rgba(red(@shadowColor), green(@shadowColor), blue(@shadowColor), .5);
 }
 
 .alert {
@@ -22,11 +21,13 @@
   border: 1px solid @warningBorder;
   .border-radius(@baseBorderRadius);
 }
+
 .alert,
 .alert h4 {
   // Specified for the h4 to prevent conflicts of changing @headingsColor
   color: @warningText;
 }
+
 .alert h4 {
   margin: 0;
 }
@@ -39,7 +40,6 @@
   line-height: @baseLineHeight;
 }
 
-
 // Alternate styles
 // -------------------------
 
@@ -49,9 +49,11 @@
   color: @successText;
   .alertTextShadow(@successText);
 }
+
 .alert-success h4 {
   color: @successText;
 }
+
 .alert-danger,
 .alert-error {
   background-color: @errorBackground;
@@ -59,20 +61,22 @@
   color: @errorText;
   .alertTextShadow(@errorText);
 }
+
 .alert-danger h4,
 .alert-error h4 {
   color: @errorText;
 }
+
 .alert-info {
   background-color: @infoBackground;
   border-color: @infoBorder;
   color: @infoText;
   .alertTextShadow(@infoText);
 }
+
 .alert-info h4 {
   color: @infoText;
 }
-
 
 // Block alerts
 // -------------------------
@@ -81,10 +85,12 @@
   padding-top: 14px;
   padding-bottom: 14px;
 }
+
 .alert-block > p,
 .alert-block > ul {
   margin-bottom: 0;
 }
+
 .alert-block p + p {
   margin-top: 5px;
 }
